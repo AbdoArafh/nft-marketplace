@@ -1,0 +1,42 @@
+.navbar-wrapper {
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    border-radius: 100vw;
+    display: flex;
+
+    background-color: $body-bg;
+    @include cool-border;
+
+    input {
+      border: none;
+      background-color: transparent;
+      color: inherit;
+      flex: 2 1 auto;
+      &:focus,
+      &:focus-within {
+        outline: none;
+      }
+    }
+  }
+  .links {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      font-weight: bold;
+    }
+  }
+}

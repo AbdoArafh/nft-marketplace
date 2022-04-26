@@ -1,0 +1,24 @@
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .cta {
+    margin: 5rem 0;
+    display: flex;
+    gap: 3rem;
+  }
+  .video {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: inherit;
+    text-decoration: none;
+  }
+  .absolute-top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -10;
+  }
+}
